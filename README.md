@@ -110,6 +110,8 @@
 * https://medium.com/analytics-vidhya/10-must-have-tips-of-django-rest-framework-to-increase-your-coding-efficiency-87ebea0e0099
 * https://www.rootstrap.com/blog/django-best-practices-and-beginner-tips
 
+* https://www.django-rest-framework.org/api-guide/routers/
+
 ## Samples
 * https://djangostars.com/blog/rest-apis-django-development/
 * https://medium.com/crowdbotics/how-to-write-an-api-in-3-lines-of-code-with-django-rest-framework-59b0971edfa4
