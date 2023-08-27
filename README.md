@@ -4,16 +4,17 @@
 * REST Framework: Django Rest Framework -> https://www.django-rest-framework.org/
 * Database: PostgreSQL
 * Web Server: NGINX (Serving Static Files)
-* Containerization: Docker
+* Containerization: Docker -> Dockerfile, docker-compose.yml
 * Version Control: Git
 * Git Management -> .gitignore
 * Version Control Hosting: GitHub
 * API Documentation: Self Describing (Browsable) APIs Documentation, Swagger, Redoc, Postman Collection -> https://www.django-rest-framework.org/topics/documenting-your-api/
-* Authentication & Authorization: JWT -> https://jwt.io/
+* Authentication & Authorization: JWT -> https://jwt.io/, Other: OAuth, Auth Token, Basic Authentication, Session Authentication, Token Authentication, JWT Authentication, RemoteUserAuthentication, SessionAuthentication, CustomAuthentication
 * Package Installer -> PIP
 * Dependency Management -> Virtualenv
 * Dependencies -> requirements.txt
 * Project Description -> README.md
+* LICENSE
 * Views -> https://www.django-rest-framework.org/api-guide/views/, Function-Based Views, Class Based (APIView, Generic Views, Mixins)
 * Serializers -> https://www.django-rest-framework.org/api-guide/serializers/
 * Permissions -> https://www.django-rest-framework.org/api-guide/permissions/
@@ -21,16 +22,12 @@
 * Throttling -> https://www.django-rest-framework.org/api-guide/throttling/
 
 ## TODOs
-* License
-* docker-compose file 
-* Dockerfile
 * Exception Handler
 * Logging
 * Caching
 * Pagination
 * Permission Authentication
 * Filtering
-* Authentication -> Basic Authentication, Session Authentication, Token Authentication, JWT Authentication, RemoteUserAuthentication, SessionAuthentication, CustomAuthentication
 * Ordering
 * Versioning
 * Result Message Formats
