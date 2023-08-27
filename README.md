@@ -15,7 +15,7 @@
 * Dependencies -> requirements.txt
 * Project Description -> README.md
 * LICENSE
-* Views -> https://www.django-rest-framework.org/api-guide/views/, Function-Based Views, Class Based (APIView, Generic Views, Mixins)
+* Views -> https://www.django-rest-framework.org/api-guide/views/, Function-Based Views (Line By Line), Class Based Views (APIView, Generic Views, Mixins)
 * Generic Views & Mixins -> https://www.django-rest-framework.org/api-guide/generic-views/
 * Serializers -> https://www.django-rest-framework.org/api-guide/serializers/
 * Permissions -> https://www.django-rest-framework.org/api-guide/permissions/
@@ -25,9 +25,7 @@
 ## TODOs
 * Exception Handler
 * Logging
-* Caching
 * Pagination
-* Permission Authentication
 * Filtering
 * Ordering
 * Versioning
@@ -37,25 +35,14 @@
 * Localization
 * AWS
 * Heroku
-* Logging
 * Caching, Redis, Memcached
 * Docker Deployment
 * Renderers
-* Filtering
-* Ordering
-* Pagination
-* Versioning
 * Shell
 * Testing, Selenium, JMeter, Django testing with pytest -> see localhost 5500/htmlcon see code coverage
 * ElasticSearch
 * Status Codes -> https://www.django-rest-framework.org/api-guide/status-codes/
-* https://www.django-rest-framework.org/api-guide/views/#function-based-views, API View, Generic View, Function Based
-* Views / Viewsets / Generic Views / API View / Model ViewSets: Class and Function Based
-* Create an endpoint with normal api line by line
-* The Browsable API
-* CRUD & Endpoints
 * Search_fields -> url de, querystrings, queryset filter ve search
-* Authentication & Authorization, OAuth, Auth Token
 * Payment Gateway, Stripe, Braintree
 * DB Management: Cassandra, SQL & Dynamo DB
 * Configure celery and Redis : event or processes occur independly and concurrently without blocking the execution of other tasks
