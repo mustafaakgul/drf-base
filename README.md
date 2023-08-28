@@ -24,38 +24,8 @@
 * Filtering -> https://www.django-rest-framework.org/api-guide/filtering/, Query Params:Query String:Query Filter, Search Filter
 * Pagination -> https://www.django-rest-framework.org/api-guide/pagination/
 
-## TODOs
-* Exception Handler
-* Logging
-* Versioning
-* Result Message Formats
-* TDD -> https://realpython.com/test-driven-development-of-a-django-restful-api/
-* CI/CD: GitHub Actions
-* Localization
-* AWS
-* Heroku
-* Caching, Redis, Memcached
-* Docker Deployment
-* Renderers
-* Shell
-* Testing, Selenium, JMeter, Django testing with pytest -> see localhost 5500/htmlcon see code coverage
-* ElasticSearch
-* Status Codes -> https://www.django-rest-framework.org/api-guide/status-codes/
-* Payment Gateway, Stripe, Braintree
-* DB Management: Cassandra, SQL & Dynamo DB
-* Configure celery and Redis : event or processes occur independly and concurrently without blocking the execution of other tasks
-* Api, django, drf, https, shell scripts, UUIDS, testing, logs, token auth, nginx, docker, sync, async, git, celery, jwt, docker hub, elastic search, digital ocean, Namecheap, pytest, postman, venv, gitignore, requirements
-* Code Quality -> pyproject.toml, make down, make build, make black-check, make black-diff, make black
-* Django Business Logic Layer?
-* api/comment/list?q=12    12. post a ait yorumlar
-* Timestamped & profile models: timestamped common models, profile model, signals
-* Custom User: Auth Custom User, User Manager, Auth Token
-* Track, https://treblle.com/
-* https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
-* https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
-* rotating refresh token, blacklist, customizing token claims
-
 ## Sources
+### Core
 * https://hevodata.com/learn/rest-api-best-practices/
 * https://swagger.io/resources/articles/best-practices-in-api-design/
 * https://medium.com/deliveryherotechhub/rest-api-tasar%C4%B1m%C4%B1-ve-best-practices-37ea7041b27
@@ -72,7 +42,7 @@
 * https://josipmisko.com/posts/rest-api-best-practices
 * https://www.softkraft.co/how-to-build-rest-api-with-django/
 * https://www.mindbowser.com/best-practices-for-rest-api-design/
-
+### Github
 * https://github.com/saqibur/django-project-structure
 * https://github.com/HackSoftware/Django-Styleguide
 * https://github.com/Joabsonlg/django-api-template
@@ -88,20 +58,15 @@
 * https://github.com/juanbenitezdev/django-rest-framework-crud
 * https://github.com/ArchTaqi/django-rest-api
 * https://github.com/ukjin1192/django-rest-framework-example
-
+### Samples
 * https://medium.com/@ebin7joseph/django-rest-framework-authentication-with-jwt-8687494509d8
 * https://blog.logrocket.com/django-rest-framework-create-api/
 * https://python.plainenglish.io/building-in-the-update-functionality-with-django-rest-framework-60c3f0436927
 * https://levelup.gitconnected.com/restful-django-django-rest-framework-8b62bed31dd8
 * https://medium.com/analytics-vidhya/10-must-have-tips-of-django-rest-framework-to-increase-your-coding-efficiency-87ebea0e0099
 * https://www.rootstrap.com/blog/django-best-practices-and-beginner-tips
-
-* https://www.django-rest-framework.org/api-guide/routers/
-
-## Samples
 * https://djangostars.com/blog/rest-apis-django-development/
 * https://medium.com/crowdbotics/how-to-write-an-api-in-3-lines-of-code-with-django-rest-framework-59b0971edfa4
-* 
 
 ## Best Practices
 * Client-Server Architecture
@@ -146,34 +111,7 @@ except IntegrityError:
         {'detail': 'User with that email already exists.'},
         status=status.HTTP_409_CONFLICT)
 
-Custom response model
-seeder and data
 Response message with status codes { ‘status’:’success|error’, ‘data’:{ 'result':{} || [] , '' }, #one level ‘meta’:{} #any meta information that you want to pass } 200 OK — Success — GET/PUT — return resource/status message 201 Created — Success — POST — provide status message or return newly created object 204 No Content — Success — DELETE 304 Unchanged — Redirect — ALL — Indicates no changes since last request 400 Bad Request — Failure — GET/PUT/POST — invalid request, return error messages 401 Unauthorized — Failure — ALL — missing credentials/Authentication required 403 Forbidden — Failure — ALL — restricted content 404 Not Found — Failure — Resource not found 405 Method Not Allowed Failure — Failure — ALL — An invalid HTTP method was attempted
-
-Versioning Your APIs:
-Implement API versioning from the beginning to ensure backward compatibility as your API evolves. DRF provides easy-to-use tools for versioning, allowing you to handle changes gracefully.
-Serialization for Data Representation:
-Proper serialization is crucial for transforming complex Python data types into JSON or other formats. Use DRF serializers to convert data and control the output efficiently.
-Using DRF’s Class-Based Views (CBVs):
-Opt for DRF’s CBVs to structure your views logically and make use of built-in mixins to handle common tasks like pagination, filtering, and authentication.
-Authentication and Permissions:
-Secure your APIs by integrating authentication methods such as token-based or OAuth2 authentication. Additionally, fine-tune permissions to control access to specific endpoints.
-Throttling and Rate Limiting:
-Implement throttling and rate limiting to prevent abuse and ensure fair usage of your API. DRF offers simple ways to set these limits based on user or IP address.
-Pagination for Large Data Sets:
-Use DRF’s pagination classes to break down large datasets into manageable chunks, ensuring optimal performance and user experience.
-Validation and Error Handling:
-DRF provides comprehensive validation tools to ensure data integrity. Handle errors gracefully and provide meaningful error responses to API consumers.
-Nested Serializers and Related Data:
-When dealing with complex data structures and related models, use nested serializers to represent the data in a structured manner and facilitate data retrieval.
-Optimizing Database Queries:
-Avoid the N+1 query problem by using DRF’s queryset optimization techniques like select_related and prefetch_related to minimize database queries.
-Caching Responses:
-Cache frequently requested API responses to improve performance and reduce the load on your server. DRF supports various caching strategies that can be easily integrated.
-Unit Testing for API Endpoints:
-Write comprehensive unit tests using DRF’s testing tools to validate the functionality of your API endpoints. Test-driven development (TDD) ensures a robust and bug-free API.
-Documentation with Swagger and API Docs:
-Leverage DRF’s support for API documentation tools like Swagger and API Docs to provide clear and up-to-date documentation for your API consumers.
 
 Versioning Your APIs:
 Implement API versioning from the beginning to ensure backward compatibility as your API evolves. DRF provides easy-to-use tools for versioning, allowing you to handle changes gracefully.
@@ -285,3 +223,35 @@ myproject_website/
 │       ├── LICENSE
 │       └── manage.py
 └── env/
+
+## TODOs
+* Exception Handler
+* Seeders
+* Logging
+* Versioning
+* Result Message Formats, Custom response model
+* TDD -> https://realpython.com/test-driven-development-of-a-django-restful-api/
+* CI/CD: GitHub Actions
+* Localization
+* AWS
+* Heroku
+* Caching, Redis, Memcached
+* Docker Deployment
+* Renderers
+* Shell
+* Testing, Selenium, JMeter, Django testing with pytest -> see localhost 5500/htmlcon see code coverage
+* ElasticSearch
+* Status Codes -> https://www.django-rest-framework.org/api-guide/status-codes/
+* Payment Gateway, Stripe, Braintree
+* DB Management: Cassandra, SQL & Dynamo DB
+* Configure celery and Redis : event or processes occur independly and concurrently without blocking the execution of other tasks
+* Api, django, drf, https, shell scripts, UUIDS, testing, logs, token auth, nginx, docker, sync, async, git, celery, jwt, docker hub, elastic search, digital ocean, Namecheap, pytest, postman, venv, gitignore, requirements
+* Code Quality -> pyproject.toml, make down, make build, make black-check, make black-diff, make black
+* Django Business Logic Layer?
+* api/comment/list?q=12    12. post a ait yorumlar
+* Timestamped & profile models: timestamped common models, profile model, signals
+* Custom User: Auth Custom User, User Manager, Auth Token
+* Track, https://treblle.com/
+* https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
+* https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
+* rotating refresh token, blacklist, customizing token claims
