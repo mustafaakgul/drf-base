@@ -21,13 +21,12 @@
 * Permissions -> https://www.django-rest-framework.org/api-guide/permissions/
 * Routers -> https://www.django-rest-framework.org/api-guide/routers/
 * Throttling -> https://www.django-rest-framework.org/api-guide/throttling/
+* Filtering -> https://www.django-rest-framework.org/api-guide/filtering/
 
 ## TODOs
 * Exception Handler
 * Logging
 * Pagination
-* Filtering
-* Ordering
 * Versioning
 * Result Message Formats
 * TDD -> https://realpython.com/test-driven-development-of-a-django-restful-api/
