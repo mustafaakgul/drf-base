@@ -82,9 +82,9 @@
 * Use Filtering, Sorting, and Pagination to Retrieve the Data Requested -> https://mysite.com/posts?sortBy=createdAt&sortOrder=desc&limit=10&offset=0
 * Use SSL for Security -> https://mysite.com/posts
 * Be Clear with Versioning -> https://mysite.com/v2 for version 2
-* RETURN ERROR DETAILS IN THE RESPONSE BODY -> 
+* Return Error Details in the Response Body -> 
     {
-    "error": "Invalid payoad.",
+    "error": "Invalid payload.",
     "detail": {
         "surname": "This field is required."
     }
