@@ -21,12 +21,12 @@
 * Permissions -> https://www.django-rest-framework.org/api-guide/permissions/
 * Routers -> https://www.django-rest-framework.org/api-guide/routers/
 * Throttling -> https://www.django-rest-framework.org/api-guide/throttling/
-* Filtering -> https://www.django-rest-framework.org/api-guide/filtering/, Query Params:Query String, Search Filter
+* Filtering -> https://www.django-rest-framework.org/api-guide/filtering/, Query Params:Query String:Query Filter, Search Filter
+* Pagination -> https://www.django-rest-framework.org/api-guide/pagination/
 
 ## TODOs
 * Exception Handler
 * Logging
-* Pagination
 * Versioning
 * Result Message Formats
 * TDD -> https://realpython.com/test-driven-development-of-a-django-restful-api/
@@ -41,7 +41,6 @@
 * Testing, Selenium, JMeter, Django testing with pytest -> see localhost 5500/htmlcon see code coverage
 * ElasticSearch
 * Status Codes -> https://www.django-rest-framework.org/api-guide/status-codes/
-* Search_fields -> url de, querystrings, queryset filter ve search
 * Payment Gateway, Stripe, Braintree
 * DB Management: Cassandra, SQL & Dynamo DB
 * Configure celery and Redis : event or processes occur independly and concurrently without blocking the execution of other tasks
