@@ -81,6 +81,10 @@
 * Name Collections with Plural Nouns -> So, instead of https://mysite.com/post/123, it should be https://mysite.com/posts/123, GET /cars/123, POST /cars, GET /cars
 * Use Status Codes in Error Handling -> Informational Responses, Redirects, Client-side errors, Server-side errors
 * Use Nesting on Endpoints to Show Relationships and Nested Serializers and Related Data -> https://mysite.com/posts/postId/comments, You should avoid nesting that is more than 3 levels deep as this can make the API less elegant and readable
+    * /users // list all users
+    * /users/123 // specific user
+    * /users/123/orders // list of orders that belong to a specific user
+    * /users/123/orders/0001 // specific order of a specific users order list
 * Use Filtering, Sorting, and Pagination to Retrieve the Data Requested -> https://mysite.com/posts?sortBy=createdAt&sortOrder=desc&limit=10&offset=0
 * Use SSL for Security -> https://mysite.com/posts
 * Return Error Details in the Response Body -> 
@@ -103,34 +107,6 @@
 * Versioning Your APIs -> https://mysite.com/v2 for version 2, Implement API versioning from the beginning to ensure backward compatibility as your API evolves. DRF provides easy-to-use tools for versioning, allowing you to handle changes gracefully.
 * Validation and Error Handling -> DRF provides comprehensive validation tools to ensure data integrity. Handle errors gracefully and provide meaningful error responses to API consumers.
 * Optimizing Database Queries -> Avoid the N+1 query problem by using DRF’s queryset optimization techniques like select_related and prefetch_related to minimize database queries.
-
-## Examples
-USE RESOURCE NESTING
-/users // list all users
-/users/123 // specific user
-/users/123/orders // list of orders that belong to a specific user
-/users/123/orders/0001 // specific order of a specific users order list
-
-class CartItemViews(APIView):
-    def post(self, request):
-        serializer = CartItemSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response({"status": "success", "data": serializer.data}, status=status.HTTP_200_OK)
-        else:
-            return Response({"status": "error", "data": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
-
-class CartItemViews(APIView):
-
-    def get(self, request, id=None):
-        if id:
-            item = CartItem.objects.get(id=id)
-            serializer = CartItemSerializer(item)
-            return Response({"status": "success", "data": serializer.data}, status=status.HTTP_200_OK)
-
-        items = CartItem.objects.all()
-        serializer = CartItemSerializer(items, many=True)
-        return Response({"status": "success", "data": serializer.data}, status=status.HTTP_200_OK)
 
 ## Structure
 myproject_website/
