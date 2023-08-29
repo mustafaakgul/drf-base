@@ -16,6 +16,8 @@
 * Dependencies -> requirements.txt
 * Project Description -> README.md
 * LICENSE
+* Shell -> python manage.py shell
+* Accounts -> Custom User: Auth Custom User, User Manager
 * Views -> https://www.django-rest-framework.org/api-guide/views/, Function-Based Views (Line By Line), Class Based Views (APIView, Generic Views, Mixins)
 * Generic Views & Mixins -> https://www.django-rest-framework.org/api-guide/generic-views/
 * Serializers -> https://www.django-rest-framework.org/api-guide/serializers/
@@ -25,6 +27,7 @@
 * Throttling -> https://www.django-rest-framework.org/api-guide/throttling/
 * Filtering -> https://www.django-rest-framework.org/api-guide/filtering/, Query Params:Query String:Query Filter, Search Filter
 * Pagination -> https://www.django-rest-framework.org/api-guide/pagination/
+* Status Codes -> https://www.django-rest-framework.org/api-guide/status-codes/
 
 ## Sources
 ### Core
@@ -180,10 +183,8 @@ myproject_website/
 * Caching, Redis, Memcached
 * Docker Deployment
 * Renderers
-* Shell
 * Testing, Selenium, JMeter, Django testing with pytest -> see localhost 5500/htmlcon see code coverage
 * ElasticSearch
-* Status Codes -> https://www.django-rest-framework.org/api-guide/status-codes/
 * Payment Gateway, Stripe, Braintree
 * DB Management: Cassandra, SQL & Dynamo DB
 * Configure celery and Redis : event or processes occur independly and concurrently without blocking the execution of other tasks
@@ -191,7 +192,6 @@ myproject_website/
 * Code Quality -> pyproject.toml, make down, make build, make black-check, make black-diff, make black
 * Django Business Logic Layer?
 * Timestamped & profile models: timestamped common models, profile model, signals
-* Custom User: Auth Custom User, User Manager, Auth Token
 * Track, https://treblle.com/
 * https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
 * https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
