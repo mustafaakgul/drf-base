@@ -190,7 +190,6 @@ myproject_website/
 * Api, django, drf, https, shell scripts, UUIDS, testing, logs, token auth, nginx, docker, sync, async, git, celery, jwt, docker hub, elastic search, digital ocean, Namecheap, pytest, postman, venv, gitignore, requirements
 * Code Quality -> pyproject.toml, make down, make build, make black-check, make black-diff, make black
 * Django Business Logic Layer?
-* api/comment/list?q=12    12. post a ait yorumlar
 * Timestamped & profile models: timestamped common models, profile model, signals
 * Custom User: Auth Custom User, User Manager, Auth Token
 * Track, https://treblle.com/
