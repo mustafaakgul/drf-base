@@ -2,7 +2,7 @@
 * Programming Language: Python
 * Web Framework: Django
 * REST Framework: Django Rest Framework -> https://www.django-rest-framework.org/
-* Database: PostgreSQL
+* Database: Relational PostgreSQL, NoSQL MongoDB, DynamoDB
 * Web Server: NGINX (Serving Static Files)
 * Containerization: Docker -> Dockerfile, docker-compose.yml
 * Version Control: Git
@@ -16,18 +16,29 @@
 * Dependencies -> requirements.txt
 * Project Description -> README.md
 * LICENSE
+* Project Management -> Makefile
 * Shell -> python manage.py shell
 * Accounts -> Custom User: Auth Custom User, User Manager
+* Common Models
 * Views -> https://www.django-rest-framework.org/api-guide/views/, Function-Based Views (Line By Line), Class Based Views (APIView, Generic Views, Mixins)
 * Generic Views & Mixins -> https://www.django-rest-framework.org/api-guide/generic-views/
 * Serializers -> https://www.django-rest-framework.org/api-guide/serializers/
 * Permissions -> https://www.django-rest-framework.org/api-guide/permissions/
-* Caching -> https://www.django-rest-framework.org/api-guide/caching/
+* Caching -> Redis, Memcached, https://www.django-rest-framework.org/api-guide/caching/
 * Routers, Rate Limiting -> https://www.django-rest-framework.org/api-guide/routers/
 * Throttling -> https://www.django-rest-framework.org/api-guide/throttling/
 * Filtering -> https://www.django-rest-framework.org/api-guide/filtering/, Query Params:Query String:Query Filter, Search Filter
 * Pagination -> https://www.django-rest-framework.org/api-guide/pagination/
+* Versioning -> https://www.django-rest-framework.org/api-guide/versioning/, https://gearheart.io/articles/api-versioning-with-django-rest-framework/
 * Status Codes -> https://www.django-rest-framework.org/api-guide/status-codes/
+* Internationalization and Localization -> https://www.django-rest-framework.org/api-guide/internationalization/, https://docs.djangoproject.com/en/4.2/topics/i18n/
+* Configuring Celery and RabbitMQ or Redis -> event or processes occur independently and concurrently without blocking the execution of other tasks (async)
+* Searching -> ElasticSearch
+* Payment Gateway, Stripe, Braintree, Native Bank Integration, Iyzico
+* Domain -> Namecheap
+* Testing -> TDD, Pytest, Code Coverage -> https://realpython.com/test-driven-development-of-a-django-restful-api/
+* Tracking, Logging -> https://treblle.com/, https://www.sentry.io/
+* Monitoring -> Prometheus, Grafana
 
 ## Sources
 ### Core
@@ -43,6 +54,7 @@
 * https://profil-software.com/blog/development/10-things-you-need-know-effectively-use-django-rest-framework/
 * https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
 * https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design
+* https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
 * https://document360.com/blog/api-design-best-practices/
 * https://josipmisko.com/posts/rest-api-best-practices
 * https://www.softkraft.co/how-to-build-rest-api-with-django/
@@ -110,6 +122,7 @@
 * Versioning Your APIs -> https://mysite.com/v2 for version 2, Implement API versioning from the beginning to ensure backward compatibility as your API evolves. DRF provides easy-to-use tools for versioning, allowing you to handle changes gracefully.
 * Validation and Error Handling -> DRF provides comprehensive validation tools to ensure data integrity. Handle errors gracefully and provide meaningful error responses to API consumers.
 * Optimizing Database Queries -> Avoid the N+1 query problem by using DRF’s queryset optimization techniques like select_related and prefetch_related to minimize database queries.
+* Use UUIDS for Primary Keys -> Use UUIDs instead of auto-incrementing integers for primary keys to avoid exposing internal IDs to API consumers.
 
 ## Structure
 myproject_website/
@@ -172,27 +185,10 @@ myproject_website/
 ## TODOs
 * Exception Handler
 * Seeders
-* Logging
-* Versioning
 * Result Message Formats, Custom response model
-* TDD -> https://realpython.com/test-driven-development-of-a-django-restful-api/
-* CI/CD: GitHub Actions
-* Localization
+* CI/CD: GitHub Actions, Jenkins, CircleCI, TravisCI
 * AWS
 * Heroku
-* Caching, Redis, Memcached
 * Docker Deployment
-* Renderers
-* Testing, Selenium, JMeter, Django testing with pytest -> see localhost 5500/htmlcon see code coverage
-* ElasticSearch
-* Payment Gateway, Stripe, Braintree
-* DB Management: Cassandra, SQL & Dynamo DB
-* Configure celery and Redis : event or processes occur independly and concurrently without blocking the execution of other tasks
-* Api, django, drf, https, shell scripts, UUIDS, testing, logs, token auth, nginx, docker, sync, async, git, celery, jwt, docker hub, elastic search, digital ocean, Namecheap, pytest, postman, venv, gitignore, requirements
-* Code Quality -> pyproject.toml, make down, make build, make black-check, make black-diff, make black
 * Django Business Logic Layer?
-* Timestamped & profile models: timestamped common models, profile model, signals
-* Track, https://treblle.com/
-* https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
-* https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
 * rotating refresh token, blacklist, customizing token claims
