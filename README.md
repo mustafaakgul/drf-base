@@ -87,7 +87,8 @@
 * https://articles.wesionary.team/preparing-your-django-application-for-production-key-considerations-and-best-practices-6125386df748
 
 ## Best Practices
-* Use Django & DRF Business Logic Layer
+* Use Django & DRF Business Logic Layer (Services) to test better
+* Use Layers Presentation Layer (Views), Business Logic Layer (Services), Data Access Layer (Models)
 * Client-Server Architecture
 * Ensure that the API scales
 * Use an international design standard The OpenAPI v3
@@ -125,6 +126,17 @@
 * Validation and Error Handling -> DRF provides comprehensive validation tools to ensure data integrity. Handle errors gracefully and provide meaningful error responses to API consumers.
 * Optimizing Database Queries -> Avoid the N+1 query problem by using DRF’s queryset optimization techniques like select_related and prefetch_related to minimize database queries.
 * Use UUIDS for Primary Keys -> Use UUIDs instead of auto-incrementing integers for primary keys to avoid exposing internal IDs to API consumers.
+
+### Business Logic Layer (Services)
+* https://emcarrio.medium.com/business-logic-in-a-django-project-a25abc64718c
+* https://jairvercosa.medium.com/business-logic-in-django-projects-7fe700db9b0a
+* https://breadcrumbscollector.tech/how-to-implement-a-service-layer-in-django-rest-framework/
+* https://dev.to/ksaaskil/tips-for-building-a-clean-rest-api-in-django-2pae
+* https://sunscrapers.com/blog/where-to-put-business-logic-django/
+* https://forum.djangoproject.com/t/where-to-put-business-logic-in-django/282/10
+* https://aliashkevich.com/business-logic-in-django-rest-framework-applications/
+* https://stackoverflow.com/questions/30197637/django-rest-framework-business-logic
+* https://www.youtube.com/watch?v=t6qbY_Z02tk
 
 ## Structure
 myproject_website/
