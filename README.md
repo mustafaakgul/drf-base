@@ -39,6 +39,7 @@
 * Testing -> TDD, Pytest, Code Coverage -> https://realpython.com/test-driven-development-of-a-django-restful-api/
 * Tracking, Logging -> https://treblle.com/, (Application Performance Monitoring & Error Tracking), https://sentry.io/for/django/, https://develop.sentry.dev/serializers/, https://docs.sentry.io/product/, https://docs.sentry.io/platforms/python/guides/django/
 * Monitoring -> Prometheus, Grafana
+* CI/CD: GitHub Actions, CircleCI, Jenkins
 
 ## Sources
 ### Core
@@ -200,7 +201,6 @@ myproject_website/
 * Exception Handler
 * Seeders
 * Result Message Formats, Custom response model
-* CI/CD: GitHub Actions, Jenkins, CircleCI, TravisCI
 * AWS
 * Heroku
 * Docker Deployment
