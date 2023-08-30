@@ -37,7 +37,7 @@
 * Payment Gateway, Stripe, Braintree, Native Bank Integration, Iyzico
 * Domain -> Namecheap
 * Testing -> TDD, Pytest, Code Coverage -> https://realpython.com/test-driven-development-of-a-django-restful-api/
-* Tracking, Logging -> https://treblle.com/, https://www.sentry.io/
+* Tracking, Logging -> https://treblle.com/, (Application Performance Monitoring & Error Tracking), https://sentry.io/for/django/, https://develop.sentry.dev/serializers/, https://docs.sentry.io/product/, https://docs.sentry.io/platforms/python/guides/django/
 * Monitoring -> Prometheus, Grafana
 
 ## Sources
@@ -84,6 +84,7 @@
 * https://www.rootstrap.com/blog/django-best-practices-and-beginner-tips
 * https://djangostars.com/blog/rest-apis-django-development/
 * https://medium.com/crowdbotics/how-to-write-an-api-in-3-lines-of-code-with-django-rest-framework-59b0971edfa4
+* https://articles.wesionary.team/preparing-your-django-application-for-production-key-considerations-and-best-practices-6125386df748
 
 ## Best Practices
 * Client-Server Architecture
