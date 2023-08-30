@@ -87,6 +87,7 @@
 * https://articles.wesionary.team/preparing-your-django-application-for-production-key-considerations-and-best-practices-6125386df748
 
 ## Best Practices
+* Use Django & DRF Business Logic Layer
 * Client-Server Architecture
 * Ensure that the API scales
 * Use an international design standard The OpenAPI v3
@@ -191,5 +192,4 @@ myproject_website/
 * AWS
 * Heroku
 * Docker Deployment
-* Django Business Logic Layer?
 * rotating refresh token, blacklist, customizing token claims
