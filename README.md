@@ -13,6 +13,7 @@
   * Other: OAuth2, Auth Token, Basic Authentication, Session Authentication, Token Authentication, JWT Authentication, RemoteUserAuthentication, SessionAuthentication, CustomAuthentication
 * Package Installer -> PIP
 * Dependency Management -> Virtualenv
+* Protecting Resources -> .env
 * Dependencies -> requirements.txt
 * Project Description -> README.md
 * LICENSE
@@ -41,7 +42,7 @@
 * Monitoring -> Prometheus, Grafana
 * Deployment -> AWS, Docker Deployment
 * CI/CD -> GitHub Actions
-* Seeders -> python manage.py loaddata seeds/tags/tags.json
+* Seeders & Fixtures -> python manage.py loaddata seeds/tags/tags.json
 * Use Custom Response Model -> return Response(
                                                     {
                                                         "status": "success",
@@ -51,7 +52,7 @@
                                                     },
                                                     status=status.HTTP_200_OK
                                                 )
-* Exception Handler, Error Handling -> https://www.django-rest-framework.org/api-guide/exceptions/
+* Exception Handler, Error Handling -> https://www.django-rest-framework.org/api-guide/exceptions/, https://medium.com/turkcell/request-validation-and-custom-exception-handling-in-django-rest-framework-649fddecb415
 
 ## Sources
 ### Core
