@@ -9,7 +9,7 @@
 * Git Management -> .gitignore
 * Version Control Hosting: GitHub
 * API Documentation: Self Describing (Browsable) APIs Documentation, Swagger, Redoc, Postman Collection -> https://www.django-rest-framework.org/topics/documenting-your-api/
-* Authentication & Authorization: JWT -> https://www.django-rest-framework.org/api-guide/authentication/, https://jwt.io/
+* Authentication & Authorization: JWT -> https://www.django-rest-framework.org/api-guide/authentication/, https://jwt.io/, Claims
   * Other: OAuth2, Auth Token, Basic Authentication, Session Authentication, Token Authentication, JWT Authentication, RemoteUserAuthentication, SessionAuthentication, CustomAuthentication
 * Package Installer -> PIP
 * Dependency Management -> Virtualenv
@@ -41,6 +41,17 @@
 * Monitoring -> Prometheus, Grafana
 * Deployment -> AWS, Docker Deployment
 * CI/CD -> GitHub Actions
+* Seeders -> python manage.py loaddata seeds/tags/tags.json
+* Use Custom Response Model -> return Response(
+                                                    {
+                                                        "status": "success",
+                                                        "message": "Tag created successfully",
+                                                        "errors": None,
+                                                        "data": serializer.data
+                                                    },
+                                                    status=status.HTTP_200_OK
+                                                )
+* Exception Handler, Error Handling -> https://www.django-rest-framework.org/api-guide/exceptions/
 
 ## Sources
 ### Core
@@ -91,6 +102,7 @@
 ## Best Practices
 * Use Django & DRF Business Logic Layer (Services) to test better
 * Use Layers Presentation Layer (Views), Business Logic Layer (Services), Data Access Layer (Models)
+* Use Custom Response Model
 * Client-Server Architecture
 * Ensure that the API scales
 * Use an international design standard The OpenAPI v3
@@ -200,7 +212,3 @@ myproject_website/
 
 ## TODOs
 * //TODO
-* Exception Handler
-* Seeders
-* Result Message Formats, Custom response model
-* rotating refresh token, blacklist, customizing token claims
